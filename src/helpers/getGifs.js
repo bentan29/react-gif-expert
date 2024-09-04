@@ -1,7 +1,7 @@
 export const getGifs = async(category) => {
 
     try{
-        const url = `https://api.giphy.com/v1/gifs/search?api_key=WWKpXS7O9mWEWhgK9GbZiNmDz3d3Y6M6&q=${category}&limit=10`;
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=WWKpXS7O9mWEWhgK9GbZiNmDz3d3Y6M6&q=${category}&limit=50`;
         const resp = await fetch(url);
         const {data} = await resp.json();
 
